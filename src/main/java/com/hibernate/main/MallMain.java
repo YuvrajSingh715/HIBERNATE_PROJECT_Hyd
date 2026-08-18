@@ -23,9 +23,9 @@ public class MallMain {
 
 		Mall m = new Mall();
 //		m.setMallId(101);   //not need to set the value for id i will automatically generate the id 
-		m.setMallName("Next Galleria Mall");
-		m.setNumberOfFloors(7);
-		m.setNumberOfShops(67);
+		m.setMallName("RatanDeep Mall");
+		m.setNumberOfFloors(1);
+		m.setNumberOfShops(4);
 		m.setOpeningTime(LocalTime.of(9, 0));
 		m.setClosingTime(LocalTime.of(10, 0));
 
