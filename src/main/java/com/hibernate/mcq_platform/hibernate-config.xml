@@ -20,11 +20,11 @@
 		<!-- give the same value in side the name option for every database -->
 		<property name="hibernate.show_sql">true</property>
 
-		<property name="hibernate.hbm2ddl.auto">create</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
 
 		<!-- Mapping Java Object with Hibernate -->
-		<mapping class="com.hibernate.entity.Employee" />
-	    <!-- we can add multiple class here also -->
+		<mapping class="com.hibernate.mcq_platform.Questions" />
+		<mapping class="com.hibernate.mcq_platform.Answers" />
 
 	</session-factory>
 </hibernate-configuration>
