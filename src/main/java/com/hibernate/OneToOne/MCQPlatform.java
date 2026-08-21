@@ -1,17 +1,17 @@
-package com.hibernate.mcq_platform;
+package com.hibernate.OneToOne;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class Main {
+public class MCQPlatform {
 
 	public static void main(String[] args) {
 
 		Configuration cnf = new Configuration();
 
-		cnf.configure("com/hibernate/mcq_platform/hibernate-config.xml");
+		cnf.configure("com/hibernate/OneToOne/hibernate-config.xml");
 
 		SessionFactory factory = cnf.buildSessionFactory();
 

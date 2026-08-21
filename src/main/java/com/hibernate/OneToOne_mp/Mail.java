@@ -1,4 +1,4 @@
-package com.hibernate.mcq_platform;
+package com.hibernate.OneToOne_mp;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -10,18 +10,18 @@ import jakarta.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name = "Questions")
+@Table(name = "mail")
 @Data
-public class Questions {
+public class Mail {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "que_id")
+	@Column(name = "mail_id")
 	private int id;
-
-	private String Question;
+	
+	private String mail;
 	
 	@OneToOne
-	private Answers Answer;
-
+//	@OneToOne(mappedBy = "mail")
+	private Password password;
 }

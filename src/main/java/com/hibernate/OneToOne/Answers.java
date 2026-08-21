@@ -1,4 +1,4 @@
-package com.hibernate.mcq_platform;
+package com.hibernate.OneToOne;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

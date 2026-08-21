@@ -20,11 +20,11 @@
 		<!-- give the same value in side the name option for every database -->
 		<property name="hibernate.show_sql">true</property>
 
-		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.hbm2ddl.auto">create-drop</property>
 
 		<!-- Mapping Java Object with Hibernate -->
-		<mapping class="com.hibernate.mcq_platform.Questions" />
-		<mapping class="com.hibernate.mcq_platform.Answers" />
+		<mapping class="com.hibernate.OneToOne_mp.Mail" />
+		<mapping class="com.hibernate.OneToOne_mp.Password" />
 
 	</session-factory>
 </hibernate-configuration>
